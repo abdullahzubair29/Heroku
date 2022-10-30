@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ <style>
+  
+   @media (max-device-width: 380px) {
+    button.abc{
+    display: none;
+
+  }
+}
+  div.mobile{
+    background-color: #FEF6D8;height: 100px;margin-top: 20px;
+
+  }
+  div.mobile1{
+    margin-top: 20px;
+  }
+  p.p{
+    font-size: 30px;font-weight: bold;
+  }
+  a.a{
+    color:green
+  }
+  h1.heading{margin-top: 100px;font-weight: bold; font-size: 50px;}
+  div.mobile2{margin-top: 100px;}
+  h2.heading{
+    font-size: 50px;font-weight:bold;
+  }
+  input.input{width:100%;height: 100px;border-radius: 5px;}
+  div.mobile3{margin-top: 100px;}
+  h2.heading1{font-size: 50px;font-weight:bold; }
+  button.login{width: 100%; height: 100px; font-size: 50px; font-weight: bold; margin-top: 15px;}
+  h1.heading3{color: #FCD94A; margin-top: 40px;}
+  h1.register{color: #FCD94A; margin-top: 40px;}
+  h1.footer{margin-top: 500px; margin-left: 50px;}
+  img.img{height:auto ;margin-left: 15px; margin-top: 25px;}
+  button.abc{float: right; font-size: 30px;font-weight: bold;}
+  @media (min-device-width: 700px) {
+    img.img{
+      width: 100px;
+      height:30px;
+    }
+    button.abc{
+      display: none;
+  
+    }
+    div.mobile{
+      height: 50px;
+     
+    }
+  
+    p.p{
+      font-size: 20px;
+      margin-bottom: 20px;
+      margin-left: 200px;
+      font-weight: 500;
+    }
+    h1.heading{
+      margin-bottom: 10px;
+      font-size: 30px;
+      font-weight: 500;
+    }h2.heading{
+      
+      font-size: 20px;
+      font-weight: 500;
+
+    }
+    h2.heading1{
+      font-size: 20px;
+      font-weight: 500;
+    }
+    input.input{
+      width: 500px;
+      height: 50px;
+    }button.login{
+      width: 200px;
+      height: 40px;
+    }
+    h1.heading3{
+      font-size: 20px;
+      font-weight: 500;
+    }
+    h1.register{
+      font-size: 20px;
+      font-weight: 500;
+    }
+    button.login{
+      font-size: 20px;
+      font-weight: 500;
+    }
+   
+
+  }
+ 
+
+ </style>
+  </head>
+
+ 
+  <body>
+<header >
+    
+    <div class="row">
+    <img class="col-lg-2 col-sm-5 img"   src="data:image/png;base64,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">
+     <div class="col-sm-4 col-lg-7"></div> 
+     
+    <button class="btn btn-warning  abc btn-group-sm" >
+    English
+</button>
+</div>
+
+
+
+</header>
+
+<div class="row mobile" >
+  <div class="col-sm-2 col-lg-2" ></div>
+  <div class="col-sm-9 col-lg-9 mobile1" >
+    <p class="p">URL verification:
+      <a class="a" > https://</a>accounts.binance.com</p>
+  </div>
+  <div class="col-sm-1 col-lg-1" ></div>
+</div>
+</div>
+
+
+<div class="col-sm-12 margin">
+  <h1 class="heading" >Binance Account Login</h1>
+
+</div>
+
+<div class="col-sm-12 mobile2" >
+<h2 class="heading">Email</h2>
+
+</div>
+<div class="col-sm-12">
+<input class="input">
+
+</div>
+
+<div class="col-sm-12 mobile3" >
+  <h2 class="heading1">Password</h2>
+  
+  </div>
+  <div class="col-sm-12">
+  <input class="input">
+  
+  </div>
+  <div class="col-sm-12">
+    <a href="website.html">
+<button class="btn btn-warning login">Login</button>
+</a>
+  </div>
+<div class="col-sm-6"> 
+<h1 class="heading3">Forgot Password?</h1>
+
+</div>
+<div class="col-sm-6"> 
+  <h1 class="register">Register Now</h1>
+  
+  </div>
+<footer>
+  <h1 class="footer">© 2017 - 2022 Binance.com. All rights reserved</h1>
+</footer>  
+</body>  
+    </html>
